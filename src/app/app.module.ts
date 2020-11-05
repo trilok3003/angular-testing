@@ -4,15 +4,24 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
+import { HeadingComponent } from './heading/heading.component';
+import { ExpanderComponent } from './expander/expander.component';
+import { ClockComponent } from './clock/clock.component';
+import { ProgressGraphModule } from './progress-graph/progress-graph.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeadingComponent,
+    ExpanderComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProgressGraphModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
