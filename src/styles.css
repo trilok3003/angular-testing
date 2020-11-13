@@ -41,7 +41,7 @@
   color: #ffffff !important;
 }
 .btn-red{
-  background-color: #a01530;
+  background-color: #887478;
   font-size: 14px;
   color: #ffffff !important;
 }
@@ -91,7 +91,8 @@
   padding-top: 34px;
 }
 .sidebar .nav-link.active, .sidebar .nav-link:hover {
-    background-color: #ec8300;
+    /* background-color: #ec8300; */
+    background-color: #c6538c;
     box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.83);
 }
 .sidebar ul li a{

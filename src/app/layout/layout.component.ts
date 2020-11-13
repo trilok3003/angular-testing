@@ -7,11 +7,15 @@ import { Observable } from 'rxjs';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
- menus = [
-   {name: 'Progress  Graph', path: 'progress-examples'},
-   {name: 'Content Projection', path: 'content-projection'},
-  
- ];
- selectedMenu = 0;
-  ngOnInit() {}
+  menus = [
+    { name: 'Progress  Graph', path: 'progress-examples' },
+    { name: 'Content Projection', path: 'content-projection' },
+    { name: 'Scrollbar Styling', path: 'scrollbarStyling' },
+    { name: 'Slider', path: 'slider' },
+    { name: 'Content Projection', path: 'content-projection-v2' },
+    { name: 'crud', path: 'crud' },
+
+  ];
+  selectedMenu = 0;
+  ngOnInit() { }
 }
