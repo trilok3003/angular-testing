@@ -16,6 +16,7 @@ import { SliderV1Component } from './components/slider-v1/slider-v1.component';
 import { ContentProjectedComponent } from './components/content-projected/content-projected.component';
 import { ContentProjectedMainComponent } from './components/content-projected/content-projected-main/content-projected-main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchingPaginationTableComponent } from './components/searching-pagination-table/searching-pagination-table.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     ScrollbarStylingComponent,
     SliderV1Component,
     ContentProjectedComponent,
-    ContentProjectedMainComponent
+    ContentProjectedMainComponent,
+    SearchingPaginationTableComponent
   ],
   imports: [
     BrowserModule,
