@@ -12,18 +12,22 @@ export class HomeComponent implements OnInit {
   products: Product[] = [];
   constructor(public crudService: CrudService, public router: Router) { }
   ngOnInit() {
-    this.crudService.getAll().subscribe((data: Product[])=>{
-      console.log(data);
-      this.products = data;
-    })  
+    this.getProducts();
   }
   onCreate() {
     this.router.navigateByUrl('crud/create');
   }
   onUpdate(productId) {
-    this.router.navigateByUrl('crud/update', productId);
+    this.router.navigateByUrl('crud/update/', productId);
   }
   onRemove(productId) {
-    this.crudService.delete(productId)
+    this.crudService.delete(productId).subscribe(res => {
+     this.getProducts();
+    })
+  }
+  getProducts() {
+    this.crudService.getAll().subscribe((data: Product[])=>{
+      this.products = data;
+    }) 
   }
 }

@@ -8,7 +8,7 @@ import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  { path: 'crud', redirectTo: 'crud', pathMatch: 'full'},
+  // { path: 'crud', redirectTo: 'crud', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'details/:productId', component: DetailsComponent },
   { path: 'create', component: CreateComponent },

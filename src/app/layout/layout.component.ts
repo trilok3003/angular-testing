@@ -14,7 +14,8 @@ export class LayoutComponent implements OnInit {
     { name: 'Slider', path: 'slider' },
     { name: 'Content Projection', path: 'content-projection-v2' },
     { name: 'crud', path: 'crud' },
-    { name: 'Search and Pagination Table', path: 'table'}
+    { name: 'Search and Pagination Table', path: 'table'},
+    { name: 'Rest', path: 'rest'}
 
   ];
   selectedMenu = 0;

@@ -23,6 +23,7 @@ export class CrudService {
     )
   }  
   getById(id): Observable<Product> {
+    console.log(id)
     return this.httpClient.get<Product>(this.apiServer + '/products/' + id)
     .pipe(
       catchError(this.errorHandler)

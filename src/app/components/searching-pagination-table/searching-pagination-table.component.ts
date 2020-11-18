@@ -9,8 +9,8 @@ import { user } from './user';
 export class SearchingPaginationTableComponent implements OnInit {
 
 
-  private userList: user[];
-  private userListBackup: user[];
+   userList: user[];
+   userListBackup: user[];
   firstItemIndex: number;
   lastItemIndex: number;
   pagesize: number = 5;

@@ -17,6 +17,7 @@ import { ContentProjectedComponent } from './components/content-projected/conten
 import { ContentProjectedMainComponent } from './components/content-projected/content-projected-main/content-projected-main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchingPaginationTableComponent } from './components/searching-pagination-table/searching-pagination-table.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { SearchingPaginationTableComponent } from './components/searching-pagina
     SliderV1Component,
     ContentProjectedComponent,
     ContentProjectedMainComponent,
-    SearchingPaginationTableComponent
+    SearchingPaginationTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +41,7 @@ import { SearchingPaginationTableComponent } from './components/searching-pagina
     HttpClientModule,
     AppRoutingModule,
     ProgressGraphModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],

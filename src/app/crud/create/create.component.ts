@@ -27,7 +27,7 @@ export class CreateComponent implements OnInit {
   submitForm() {
     this.crudService.create(this.productForm.value).subscribe(res => {
       console.log('Product created!')
-      this.router.navigateByUrl('/crud/home/')})
+      this.router.navigateByUrl('/crud/home')})
 
   }
 }

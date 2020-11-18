@@ -16,6 +16,7 @@ const routes: Routes = [
   {path: 'table', component: SearchingPaginationTableComponent },
   {path: 'content-projection-v2', component: ContentProjectedComponent },
   {path: 'crud', loadChildren: () => import('./crud/crud.module').then(m => m.CrudModule)},
+  {path: 'rest', loadChildren: () => import('./rest/rest.module').then(m => m.RestModule)},
   // { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
 
