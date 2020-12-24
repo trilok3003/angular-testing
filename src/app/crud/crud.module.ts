@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { CreateComponent } from './create/create.component';
 import { UpdateComponent } from './update/update.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -17,7 +18,8 @@ import { UpdateComponent } from './update/update.component';
     HttpClientModule, 
     CrudRoutingModule,
     FormsModule,
-    ReactiveFormsModule,    
+    ReactiveFormsModule,  
+    SharedModule  
      ],
 })
 export class CrudModule { }

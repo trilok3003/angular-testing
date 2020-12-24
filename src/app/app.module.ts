@@ -18,6 +18,7 @@ import { ContentProjectedMainComponent } from './components/content-projected/co
 import { HttpClientModule } from '@angular/common/http';
 import { SearchingPaginationTableComponent } from './components/searching-pagination-table/searching-pagination-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     ProgressGraphModule,
     BrowserAnimationsModule,
-
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
